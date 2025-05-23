@@ -1,0 +1,126 @@
+<nav class="main-nav">
+  <div class="nav-content">
+    <a href="/" class="logo-area">
+      <img src="/favicon.svg" alt="Insano Network Logo" class="logo" />
+      <div class="brand-text">
+        <span class="brand-main">Insano</span>
+        <span class="brand-sub">Network</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/">Inicio</a></li>
+      <li><a href="#">Proyectos</a></li>
+      <li><a href="#">Conocenos</a></li>
+      <li><a href="#">Herramientas</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="#">Tienda</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="register">Register</button>
+      <button class="login">Log in</button>
+    </div>
+  </div>
+</nav>
+<style>
+.main-nav {
+  background: #163233;
+  width: 100%;
+  border-top: 1px solid #3a4b4c;
+  border-bottom: 1px solid #3a4b4c;
+  display: flex;
+  justify-content: center;
+  font-family: 'Atkinson', sans-serif;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+.nav-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 1.5rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.logo-area {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.brand-main {
+  color: #ffd600;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.brand-sub {
+  color: #b0bfc0;
+  font-size: 0.9rem;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+.nav-links a:hover {
+  color: #ffd600;
+}
+.nav-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+.register {
+  background: #fff;
+  color: #163233;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.register:hover {
+  background: #ffd600;
+}
+.login {
+  background: #232728;
+  color: #b0bfc0;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.login:hover {
+  background: #444c4d;
+  color: #fff;
+}
+@media (max-width: 900px) {
+  .nav-content {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 0.5rem;
+  }
+  .nav-links {
+    gap: 1rem;
+  }
+}
+</style> 
