@@ -7,92 +7,9 @@ import Nav from '../components/nav.astro';
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Insano Network</title>
+		<title>Nuevo Proyecto</title>
 	</head>
 	<body style="margin:0;min-height:100vh;background:#000;">
-		<div class="floating-nav-wrapper">
-			<div class="nav-container">
-				<Nav />
-			</div>
-			<div class="corner-lines">
-				<div class="line top left"></div>
-				<div class="line top right"></div>
-				<div class="line bottom left"></div>
-				<div class="line bottom right"></div>
-			</div>
-		</div>
-		<style>
-			body {
-				background: #000;
-				min-height: 100vh;
-			}
-			.floating-nav-wrapper {
-				position: relative;
-				width: 100vw;
-				height: 100px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				margin-top: 40px;
-			}
-			.nav-container {
-				width: 90vw;
-				max-width: 1200px;
-				margin: 0 auto;
-				border-radius: 16px;
-				overflow: visible;
-				box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
-				background: transparent;
-				z-index: 2;
-			}
-			.corner-lines {
-				position: absolute;
-				width: 100vw;
-				height: 100px;
-				top: 0;
-				left: 0;
-				pointer-events: none;
-				z-index: 1;
-			}
-			.line {
-				position: absolute;
-				background: #444;
-			}
-			.line.top.left {
-				top: 0;
-				left: 0;
-				width: 30px;
-				height: 1px;
-			}
-			.line.top.right {
-				top: 0;
-				right: 0;
-				width: 30px;
-				height: 1px;
-			}
-			.line.bottom.left {
-				bottom: 0;
-				left: 0;
-				width: 30px;
-				height: 1px;
-			}
-			.line.bottom.right {
-				bottom: 0;
-				right: 0;
-				width: 30px;
-				height: 1px;
-			}
-			@media (max-width: 900px) {
-				.floating-nav-wrapper {
-					height: 140px;
-				}
-				.corner-lines {
-					height: 140px;
-				}
-				.nav-container {
-					width: 98vw;
-				}
-			}
-		</style>
+		<Nav />
 	</body>
 </html>
