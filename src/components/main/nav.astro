@@ -1,24 +1,30 @@
 <div class="nav-wrapper">
   <div class="nav-line nav-line-top"></div>
-  <nav class="main-nav">
-    <div class="nav-content">
-      <a href="/" class="logo-area">
-        <img src="/src/assets/Logo.png" alt="Insano Network Logo" class="logo" style="width: 125px; height: auto;" />
-      </a>
-      <ul class="nav-links">
-        <li><a href="/">Inicio</a></li>
-        <li><a href="#">Proyectos</a></li>
-        <li><a href="#">Conocenos</a></li>
-        <li><a href="#">Herramientas</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="#">Tienda</a></li>
-      </ul>
-      <div class="nav-actions">
-        <button class="register">Register</button>
-        <button class="login">Log in</button>
-      </div>
+  <div class="wrapper-vertical">
+    <div class="vertical-line left"></div>
+    <div class="nav-vertical-content">
+      <nav class="main-nav">
+        <div class="nav-content">
+          <a href="/" class="logo-area">
+            <img src="/src/assets/Logo.png" alt="Insano Network Logo" class="logo" style="width: 125px; height: auto;" />
+          </a>
+          <ul class="nav-links">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Conocenos</a></li>
+            <li><a href="#">Herramientas</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="#">Tienda</a></li>
+          </ul>
+          <div class="nav-actions">
+            <button class="register">Register</button>
+            <button class="login">Log in</button>
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
+    <div class="vertical-line right"></div>
+  </div>
   <div class="nav-line nav-line-bottom"></div>
 </div>
 <style>
@@ -162,5 +168,45 @@
 .nav-line-bottom {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+.wrapper-vertical {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  justify-content: center;
+}
+.vertical-line {
+  position: absolute;
+  width: 2px;
+  background: #fff;
+  border-radius: 2px;
+  top: -20px;
+  bottom: -20px;
+  height: auto;
+}
+.vertical-line.left {
+  left: 0;
+}
+.vertical-line.right {
+  right: 0;
+}
+.nav-vertical-content {
+  width: 99.5%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 900px) {
+  .wrapper-vertical {
+    width: 100vw;
+  }
+  .vertical-line {
+    min-width: 4px;
+    max-width: 12px;
+    height: 40px;
+  }
+  .nav-vertical-content {
+    width: 90vw;
+  }
 }
 </style> 
